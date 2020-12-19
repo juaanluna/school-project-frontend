@@ -1,3 +1,3 @@
-const Api = `https://viamaker.herokuapp.com/`;
+const Api = `https://viamaker.herokuapp.com`;
 
 export default Api;
