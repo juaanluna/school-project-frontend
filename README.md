@@ -26,6 +26,7 @@ https://viamaker-d4688.web.app
 O que foi aplicado nesse projeto?
 
 * **Login animado com css puro**
+* **Light/dark theme**
 * **LocalStorage**
 * **Redux**
 * **PWA** *(Uma versão web, desktop e mobile da MESMA aplicação)*
