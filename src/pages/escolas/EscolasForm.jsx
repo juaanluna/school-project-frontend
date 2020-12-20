@@ -104,7 +104,7 @@ const EscolasForm = (props) => {
           <Form.Group as={Col} controlId="formGridName">
             <Form.Label>Nome</Form.Label>
             <Form.Control
-              placeholder="Ex: Juan"
+              placeholder="Ex: Escola #1"
               onChange={onChange(setName)}
               value={name}
             />

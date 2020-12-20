@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from "prop-types";
 import './table.css';
 import { Container, Button, Table as Tabela } from 'react-bootstrap';
 import { propTypes } from 'react-bootstrap/esm/Image';
 import { FaPen } from 'react-icons/fa'
+import { ThemeContext } from 'styled-components';
 
 const Table = ({
   buttonTitle,
@@ -14,12 +15,14 @@ const Table = ({
   datas,
   attributes,
   url
- }) => {
+}) => {
+
+  const { colors } = useContext(ThemeContext)
 
   return (
     <Container>
       <div id='header'>
-        <h3 id='title'>{title}</h3>
+        <h3 id='title' style={{ color: colors.text }}>{title}</h3>
         <Button variant="success" onClick={buttonAdd}>
           {buttonTitle}
         </Button>
@@ -27,14 +30,14 @@ const Table = ({
 
       <Tabela striped bordered hover>
         <thead>
-          <tr>
+          <tr style={{ color: colors.text }}>
             <th>#</th>
             <th>{firstTableTitle}</th>
             <th>{secondTableTitle}</th>
             <th></th>
           </tr>
         </thead>
-        <tbody>
+        <tbody style={{ color: colors.text }}>
           {datas.map((data, index) => {
             return (
               <tr key={index}>{
@@ -44,7 +47,12 @@ const Table = ({
                   )
                 })
               }
-                <a id='editButton' href={`${url}/${data.id}`}><FaPen /></a>
+                <a id='editButton'
+                  style={{ color: colors.text }}
+                  href={`${url}/${data.id}`}
+                >
+                  <FaPen />
+                </a>
               </tr>
             )
           })}

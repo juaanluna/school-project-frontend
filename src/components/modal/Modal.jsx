@@ -1,6 +1,7 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useContext } from "react";
 import { Button, Modal as ModalComponent } from "react-bootstrap";
 import PropTypes from "prop-types";
+import { ThemeContext } from 'styled-components';
 
 const Modal = ({
   title,
@@ -22,6 +23,7 @@ const Modal = ({
     if (onHide) onHide();
   }, [onHide, onSubmit, onlySubmit]);
 
+  const { colors } = useContext(ThemeContext)
   return (
     <ModalComponent
       style={{ opacity: 1 }}
@@ -30,11 +32,11 @@ const Modal = ({
       backdrop="static"
       keyboard={false}
     >
-      <ModalComponent.Header closeButton>
-        <ModalComponent.Title>{title}</ModalComponent.Title>
+      <ModalComponent.Header closeButton style={{backgroundColor:colors.background}}>
+        <ModalComponent.Title style={{ color: colors.text }}>{title}</ModalComponent.Title>
       </ModalComponent.Header>
-      <ModalComponent.Body>{children}</ModalComponent.Body>
-      <ModalComponent.Footer>
+      <ModalComponent.Body style={{backgroundColor:colors.background}}>{children}</ModalComponent.Body>
+      <ModalComponent.Footer style={{backgroundColor:colors.background}}>
         {btnFooter ? (
           <div>{btnFooter}</div>
         ) : (

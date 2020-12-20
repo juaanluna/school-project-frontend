@@ -1,29 +1,29 @@
 #header {
-  padding: 2%;
-  margin-top: 2%;
-  display: flex;
-  justify-content: space-between;
+    padding: 2%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
 }
 
 #title {
-  color: grey;
+    color: grey;
 }
 
 .table td,
 .table th {
-  vertical-align: inherit;
+    vertical-align: inherit;
 }
 
 #buttonsGroup {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
 }
 
 #editButton {
-  color: #000;
-  margin-top: 15%;
-  display: flex;
-  justify-content: center;
+    color: #000;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
 }

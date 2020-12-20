@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Form, Button, Container } from "react-bootstrap";
 import { FaArrowLeft } from "react-icons/fa";
 import PropTypes from 'prop-types';
 import { useHistory } from 'react-router-dom'
 import './form.css'
+import { ThemeContext } from 'styled-components';
 
 const DefaultForm = ({
   title,
@@ -15,25 +16,35 @@ const DefaultForm = ({
   onClickSend
 }) => {
   const history = useHistory()
+  const { colors } = useContext(ThemeContext)
+
   return (
     <>
       <Container>
         <div className="card" id='formContainer'>
           <a
             className="arrowBack"
+            style={{ backgroundColor: colors.background, color: colors.text }}
             onClick={() => history.goBack()}
             id='goBack'
           >
             <FaArrowLeft /> Voltar
           </a>{" "}
 
-          <div className="card-header" id='card'>
+          <div
+            className="card-header"
+            id='card'
+            style={{ color: colors.alternativeTextColor }}
+          >
             <a className="formIcon" id='icon'>
               {icon}
             </a>{" "}
             <h4 style={{ margin: "0px" }}>{title}</h4>
           </div>
-          <div className="card-body">
+          <div className="card-body"
+            style={{ backgroundColor: colors.background }}
+
+          >
             <Form sm={8}>
               {children}
               <Button variant="success" className="btnDefault" onClick={onClickSend}>

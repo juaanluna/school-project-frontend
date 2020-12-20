@@ -1,11 +1,18 @@
-import React from 'react';
-import logo from '../../assets/logoHome.png';
+import React, { useContext } from 'react';
+import logoLight from '../../assets/logoHomeLight.png';
+import logoDark from '../../assets/logoHomeDark.png';
 import './home.css';
+import { ThemeContext } from 'styled-components';
 
 const Home = () => {
+  const { title } = useContext(ThemeContext)
   return (
     <div id='homeContainer'>
-      <img src={logo} id='img' />
+      {title === 'dark' ?
+        <img src={logoDark} id='img'  />
+        :
+        <img src={logoLight} id='img'/>
+      }
     </div>
   )
 }

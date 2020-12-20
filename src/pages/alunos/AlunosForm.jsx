@@ -117,7 +117,7 @@ const AlunosForm = (props) => {
         </Form.Row>
 
         <Form.Row>
-          <Form.Group as={Col} controlId="formGridName">
+          <Form.Group as={Col} >
             <Form.Label>Turma:</Form.Label>
             <Form.Control
               as="select"

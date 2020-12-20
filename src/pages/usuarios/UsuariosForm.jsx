@@ -101,7 +101,7 @@ const UsuariosForm = (props) => {
         </Modal>
 
         <Form.Row>
-          <Form.Group as={Col} controlId="formGridName">
+          <Form.Group as={Col} >
             <Form.Label>Nome</Form.Label>
             <Form.Control
               placeholder="Ex: Juan"
@@ -111,7 +111,7 @@ const UsuariosForm = (props) => {
           </Form.Group>
         </Form.Row>
         <Form.Row>
-          <Form.Group as={Col} controlId="formGridName">
+          <Form.Group as={Col} >
             <Form.Label>E-mail</Form.Label>
             <Form.Control
               placeholder="Ex: juan@mail.com"

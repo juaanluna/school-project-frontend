@@ -116,7 +116,7 @@ const TurmasForm = (props) => {
           </Form.Group>
         </Form.Row>
         <Form.Row>
-          <Form.Group as={Col} controlId="formGridName">
+          <Form.Group as={Col} >
             <Form.Label>Escola:</Form.Label>
             <Form.Control
               as="select"
