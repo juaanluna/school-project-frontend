@@ -1,0 +1,23 @@
+#formContainer {
+    margin: 30px 0px;
+}
+
+#goBack {
+    color: #343A40;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+#card {
+    background-color: #343A40;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+}
+
+#icon {
+    color: #FFF;
+    padding: 10px;
+    align-items: center;
+}

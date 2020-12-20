@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom';
 import { getEscolas } from '../../store/escolas/escolas.action';
 import { useDispatch, useSelector } from 'react-redux';
 
-const Usuarios = () => {
+const Escolas = () => {
   const history = useHistory()
   const dispatch = useDispatch()
 
@@ -30,4 +30,4 @@ const Usuarios = () => {
     </Container>
   )
 }
-export default Usuarios;
+export default Escolas;

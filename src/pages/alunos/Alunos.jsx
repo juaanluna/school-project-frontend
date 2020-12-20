@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 import { Container } from "react-bootstrap";
 import { Table } from '../../components/table'
 import { useHistory } from 'react-router-dom';
@@ -20,11 +20,9 @@ const Alunos = () => {
       turma: item.turmas.name
     }
   })
-  console.log(turmas)
- 
+
   return (
     <Container>
-
       <Table
         title='Alunos'
         buttonTitle='Adicionar novo aluno'
@@ -35,7 +33,6 @@ const Alunos = () => {
         attributes={['id', 'name', 'turma']}
         url='/alunos/form'
       />
-
     </Container>
   )
 }

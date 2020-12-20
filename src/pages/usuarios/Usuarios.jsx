@@ -17,7 +17,6 @@ const Usuarios = () => {
 
   return (
     <Container>
-
       <Table
         title='Usuários'
         buttonTitle='Adicionar novo usuário'
@@ -28,7 +27,6 @@ const Usuarios = () => {
         attributes={['id', 'name', 'email']}
         url='/usuarios/form'
       />
-
     </Container>
   )
 }

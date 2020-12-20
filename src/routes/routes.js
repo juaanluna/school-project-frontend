@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
+import PrivateRoute from './PrivateRoute';
 import { Auth, RecoveryPassword } from "../pages/auth";
 import { Home } from "../pages/home";
 import { Alunos, AlunosForm } from "../pages/alunos";
 import { Escolas, EscolasForm } from "../pages/escolas";
 import { Turmas, TurmasForm } from "../pages/turmas";
 import { Usuarios, UsuariosForm } from "../pages/usuarios";
-import PrivateRoute from './PrivateRoute';
 
 const Router = () => {
   return (

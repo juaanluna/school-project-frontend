@@ -3,6 +3,7 @@ import { Form, Button, Container } from "react-bootstrap";
 import { FaArrowLeft } from "react-icons/fa";
 import PropTypes from 'prop-types';
 import { useHistory } from 'react-router-dom'
+import './form.css'
 
 const DefaultForm = ({
   title,
@@ -17,27 +18,17 @@ const DefaultForm = ({
   return (
     <>
       <Container>
-        <div className="card" style={{ margin: "30px 0px" }}>
+        <div className="card" id='formContainer'>
           <a
             className="arrowBack"
             onClick={() => history.goBack()}
-            style={{ color: "#343A40", padding: "10px", alignItems: "center", cursor:'pointer' }}
+            id='goBack'
           >
             <FaArrowLeft /> Voltar
           </a>{" "}
-          <div
-            className="card-header"
-            style={{
-              background: "#343A40",
-              color: "white",
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
-            <a
-              className="formIcon"
-              style={{ color: "white", padding: "10px", alignItems: "center" }}
-            >
+
+          <div className="card-header" id='card'>
+            <a className="formIcon" id='icon'>
               {icon}
             </a>{" "}
             <h4 style={{ margin: "0px" }}>{title}</h4>

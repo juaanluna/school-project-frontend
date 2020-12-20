@@ -23,7 +23,6 @@ const Turmas = () => {
  
   return (
     <Container>
-
       <Table
         title='Turmas'
         buttonTitle='Adicionar nova turma'
@@ -34,7 +33,6 @@ const Turmas = () => {
         attributes={['id', 'name', 'escola']}
         url='/turmas/form'
       />
-
     </Container>
   )
 }

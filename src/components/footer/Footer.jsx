@@ -1,23 +1,14 @@
 import React from "react";
+import './footer.css'
 
 const Footer = () => {
   return (
-    <div
-      style={{
-        position: "fixed",
-        left: "0",
-        bottom: "0",
-        width: "100%",
-        // background: "red",
-        color: "grey",
-        textAlign: "center",
-      }}
-    >
+    <div id='footerContainer'>
       <p>
-      Desenvolvido com ❤ por:
-        <a 
-        style={{color:'grey'}} 
-        href="https://github.com/juaanluna"> Juan Luna</a>
+        Desenvolvido com ❤ por:
+        <a
+          style={{ color: 'grey' }}
+          href="https://github.com/juaanluna"> Juan Luna</a>
       </p>
     </div>
   );

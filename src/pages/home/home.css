@@ -1,0 +1,8 @@
+#homeContainer{
+    display: flex; 
+    justify-content: center;
+    height: 75vh; 
+}
+#img{
+    object-fit: contain;
+}

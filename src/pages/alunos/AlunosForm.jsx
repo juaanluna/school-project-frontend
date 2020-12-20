@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useCallback } from 'react'
-import { Form, Col, Button } from "react-bootstrap";
-import { FaPlus, FaPen } from "react-icons/fa";
 import DefaultForm from "../../components/form";
-import { createAlunos, updateAlunos, deleteAlunos, findAlunos } from '../../store/alunos/alunos.action'
 import { Modal } from "../../components/modal";
 import { useDispatch, useSelector } from 'react-redux'
-import { getTurmas } from '../../store/turmas/turmas.action'
+import { Form, Col, Button } from "react-bootstrap";
+import { FaPlus, FaPen } from "react-icons/fa";
 import { Redirect } from 'react-router-dom'
+import { createAlunos, updateAlunos, deleteAlunos, findAlunos } from '../../store/alunos/alunos.action'
+import { getTurmas } from '../../store/turmas/turmas.action'
 
 const AlunosForm = (props) => {
 
@@ -102,7 +102,7 @@ const AlunosForm = (props) => {
         >
           <a>
             Tem certeza que deseja deletar <b>{aluno.name}</b>?
-        </a>
+          </a>
         </Modal>
 
         <Form.Row>
@@ -131,8 +131,8 @@ const AlunosForm = (props) => {
             </Form.Control>
           </Form.Group>
         </Form.Row>
-
       </>
+
     </DefaultForm >
   )
 }

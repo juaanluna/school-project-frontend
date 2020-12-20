@@ -1,11 +1,20 @@
 import React from 'react';
-import { Container, Button, Table as Tabela } from 'react-bootstrap';
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import './table.css';
+import { Container, Button, Table as Tabela } from 'react-bootstrap';
 import { propTypes } from 'react-bootstrap/esm/Image';
 import { FaPen } from 'react-icons/fa'
 
-const Table = ({ buttonTitle, firstTableTitle, secondTableTitle, title, buttonAdd, datas, attributes, url }) => {
+const Table = ({
+  buttonTitle,
+  firstTableTitle,
+  secondTableTitle,
+  title,
+  buttonAdd,
+  datas,
+  attributes,
+  url
+ }) => {
 
   return (
     <Container>
